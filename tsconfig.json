@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "./dist", // 컴파일된 파일이 저장될 디렉토리
+      "rootDir": "./src", // TypeScript 파일이 위치한 디렉토리
+      "strict": true,
+      "baseUrl": ".",
+      "paths": {
+        "@Util/*": ["./src/util/*"]
+      },
+      "esModuleInterop" : true,
+    },
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
